@@ -1,8 +1,8 @@
 package br.edu.ifmg.Chat_RAG_SpringAI.service;
 
+import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ai.reader.TextReader;
-import org.springframework.ai.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.ai.document.Document;
 import lombok.extern.slf4j.Slf4j;
