@@ -1,6 +1,6 @@
 package br.edu.ifmg.Chat_RAG_SpringAI.service;
 
-import lombok.Value;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ai.reader.TextReader;
 import org.springframework.ai.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.VectorStore;
@@ -16,7 +16,7 @@ import java.util.List;
 @Service
 public class AIService {
 
-    @Value("classpath:/data/sample.json")
+    @Value("classpath:/data/sample.txt")
     private Resource fileResource;
 
     @Autowired
